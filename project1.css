@@ -1,0 +1,144 @@
+/* PROJECT 1  */
+.container{
+    background-color: white;
+    width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 10px;
+    box-shadow:3px 3px 20px rgba(0, 0, 0, 0.8);
+}
+h1{
+    font-size: 28px;
+    margin: 10px;
+}
+input{
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+}
+.btn{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 10px 30px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    background-color: rgb(219, 51, 253);
+    box-shadow: rgba(0, 0, 0, 0.6);
+}
+.error{
+    text-align: center;
+    display: none;
+    width: 70%;
+    padding: 5px 0;
+    background-color: rgb(255, 139, 139);
+}
+h3{
+    font-size: 22px;
+    margin-top: 5px;
+}
+.message{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(44, 29, 255);
+    margin-top: -5px;
+}
+
+/* PROJECT 2  */
+.btncolor{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;     /* An outline is a line drawn outside the element's border.*/
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.8),  0 0 10px rgba(0, 0, 0, 0.8);
+}
+.btncolor:active{
+    top: 10px;
+    left: 2px;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+}
+/* text-transform
+none	    No capitalization. The text renders as it is. This is default	
+capitalize	Transforms the first character of each word to uppercase	
+uppercase	Transforms all characters to uppercase	
+lowercase	Transforms all characters to lowercase
+*/
+
+/* PROJECT 3  */
+.countcontainer{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    background-color: white;
+    color: black;
+    width: 400px;
+    min-height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 5px 5px 10px
+                rgba(0, 0, 0, 0.3),
+                inset -5px -5px 10px
+                rgba(0, 0, 0, 0.3);
+}
+.countheading{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: blueviolet;
+    text-align: center;
+}
+.countnumber{
+    font-size: 42px;
+    text-align: center;
+}
+.artazalt{
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    align-items: center;
+}
+.incdec{
+    color: white;
+    background-color: blueviolet;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 4px 4px 0px black;
+    padding: 10px 20px;
+}
+.incdec:active{
+    position: relative;
+    top: 4px;
+    left: 4px;
+    box-shadow: none;
+}
+.reset{
+    color: white;
+    background-color: black;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 3px 10px;
+}
+.reset:active{
+ transform:scale(0.95);
+}
