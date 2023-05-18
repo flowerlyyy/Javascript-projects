@@ -142,3 +142,39 @@ lowercase	Transforms all characters to lowercase
 .reset:active{
  transform:scale(0.95);
 }
+
+/* PROJECT 4  */
+.slider{
+    background:url('images/1.png');
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    border-radius: 5px;
+    width: 900px;
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 8px solid yellow;
+    position: relative;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+}
+.btn-left, .btn-right{
+    position: absolute;
+    color: yellow;
+    border-radius: 5px;
+    background-color: black;
+    border: 5px solid yellow;
+    font-size: 18px;
+    padding: 10px;
+}
+.btn-left{
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+.btn-right{
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+}
