@@ -22,7 +22,7 @@ function displayMessage(){
 //PROJECT 2
 const btncolorEl=document.querySelector('.btncolor');
 const bodyEl=document.querySelector('body');
-
+let count;
 var colors=['blue','white','yellow','violet','red','green','orange'];
 
 bodyEl.style.background='pink';
@@ -100,6 +100,29 @@ function leftfunction(){
     }
     sliderEl.style.background = `url("images/${imageNo[number]}.png")`;
 }
+
+//PROJECT 5
+const cursorEl= document.querySelector('.cursor');
+var timeout;
+document.addEventListener('mousemove', movement);
+
+function movement(e){
+    console.log('moving');
+    let x=e.pageX;
+    let y=e.pageY;
+    cursorEl.style.left= x+'px';
+    cursorEl.style.right=y + 'px';
+    cursorEl.style.display='block';
+
+    clearTimeout(timeout)
+    timeout=setTimeout(()=>{
+        cursorEl.style.display='none'
+    },2000);
+    }
+    document.addEventListener('mouseout',()=>{
+        cursorEl.style.display='none';
+    })
+    
 
 
 
